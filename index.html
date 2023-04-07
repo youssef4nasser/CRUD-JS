@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>CRUD</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container py-4">
+        <label for="productName">productName</label>
+        <input type="text" id="productName" class="form-control mb-3">
+
+        <label for="productPrice">productPrice</label>
+        <input type="number" id="productPrice" class="form-control mb-3">
+
+        <label for="productCategory">productCategory</label>
+        <input type="text" id="productCategory" class="form-control mb-3">
+
+        <label for="productDesc">productDesc</label>
+        <textarea class="w-100" id="productDesc" rows="6"></textarea>
+        
+        <button id="btnAdd" onclick="addProduct()" class="btn btn-info my-4">Add product</button>
+        <!-- <button id="btnUpdate" class="btn d-block btn-warning my-4 d-none">Update product</button> -->
+    </div>
+
+    <div class="container my-3">
+        <input oninput="searchProduct(this.value)" type="text" class="form-control mx-auto w-75 mb-4" placeholder="Search by name ..">
+        <table class="table table-striped bg-danger">
+            <thead>
+                <th>Id</th>
+                <th>Name</th>
+                <th>price</th>
+                <th>Category</th>
+                <th>Desc</th>
+                <th>update</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+
+</html>

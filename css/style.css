@@ -1,0 +1,14 @@
+
+
+#demo, #profile, #services{
+    background-color: aquamarine;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
